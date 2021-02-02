@@ -11,7 +11,7 @@
 #endif
 
 // Unique identifier of this tool. Must be the same name used by the
-// PowerSwitch_Control.ino code uploaded to the power-controlling arduino.
+// PowerSwitch.ino code uploaded to the power-controlling arduino.
 #define TOOLNAME  "ms1_drill_press"
 
 // If the tool requires an admin to be in the room, set to 1
@@ -90,24 +90,23 @@ void setup_wifi() {
 // Callback for any received MQTT message
 //
 void callback(char* topic, byte* payload, unsigned int length) {
-  // Coppy the message into a char buffer
-  for(int i=0; i<length; i++) {
+  // Copy the message into a char buffer
+  for (int i=0; i<length; i++) {
     recmsg[i] = (char)payload[i];
   }
 
   // The action we are interested in is in the first few characters. Either "off", "on", or "timeout"
-  if(strncmp(recmsg,"off",3)==0) {
+  if (strncmp(recmsg,"off",3)==0) {
     // If msg says off, then the server just told the powerswitch to turn off. We should remember that here.
     // Cases like invalid IDs end up here too. We set the LED to red to signal the tool is disabled.
     powerswitch_status = 0;
     setLED(RED);
-  }  else if(strncmp(recmsg,"on",2)==0) {
+  } else if(strncmp(recmsg,"on",2)==0) {
     // If msg says on, then the server just told the powerswitch to turn on. We should remember that here.
     // Set the LED to green to signal the tool is enabled.
     powerswitch_status = 1;
     setLED(GREEN);
-  }
-  else if(strncmp(recmsg,"timeout",7)==0) {
+  } else if(strncmp(recmsg,"timeout",7)==0) {
     // If the msg says timeout, then the powerswitch just told the server that it has been enabled for too long without usage.
     // We send a message to the server to let them know the card UID so it can email the student about this bad behavior.
     // The server will also respond with a "off" message to the tool so we do not have to setLED or change status here.
@@ -187,7 +186,7 @@ void loop() {
     }
   }
   // Else, if a card has been removed from the reader
-  else if(!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial()) {
+  else if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial()) {
     // Make sure a card was on the slot already (this should always be satisfied)
     if (card_in_slot) {
       card_in_slot = false;

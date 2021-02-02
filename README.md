@@ -2,6 +2,7 @@
  
 Makerspace  staff  exert  much  of  their  time watching over students and verifying safety training...  a  process  that  is  mundane, imperfect, and begs for automation.Our  motivation  was  to  non-obtrusively enforce  the  safe  and  sustainable  use  of machinery  in  the  Makerspaces  across campus through RF student ID verification against a user database - if a student is not trained, power is cut to the tool and it will not turn on.
 
+## System Usage Diagram
 The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and MQTT broker for arduino microcontrollers in the Makerspace, and it communicates with the external database to authenticate users trying to enable tools. The complete workflow is as follows.
 1. A user inserts their ID into the 3D printed "Card Holder". The Holder holds the card such that the RFID element hovers over an RFID reader. A Wi-Fi Arduino inside the Holder detects that a card has been placed and reads the UUID from the student ID.
 2. The Wi-Fi Arduino publishes a MQTT message to the Raspberry Pi in the room asking for user authentication, and notifies it which tool the user is trying to use. The Arduino changes a status LED to yello to signify that authentication is underway.
@@ -13,7 +14,6 @@ The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and 
 
 A buddy system is also supported in that a tool can require a room administrator to put their card in a separate "buddy" Card Holder. 
 ![Diagram](./diagram.png)
-
 
 ## Materials for One Connected Tool
 | Component      | Quantity | Total Cost

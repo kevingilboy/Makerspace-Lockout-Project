@@ -7,4 +7,4 @@ There are three 3D-printable parts for the housing shown below, which was design
 
 Unfortunately, I cannot find the body part file. Perhaps BP still has it.
 
-![Rendering](./rendering.png)
+![Rendering](./rendering/rendering.png)

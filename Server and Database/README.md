@@ -1,7 +1,7 @@
 # Server and Database
 A NodeJS server and MySQL database were hosted off-premise that could be queried through a REST API. The database included information on users, visits, tools, and volunteers as described below.
 
-The server included a site that allowed students to sign-in to the Makerspace, as well as admins to add/remove users from the database in a friendly way.
+The server included a site that allowed students to sign-in to the Makerspace, as well as admins to add/remove users from the database in a friendly way. I have this code and will upload it in the near future.
 
 When the in-room Pi access point wanted to know if someone was authenticated for a tool, it would send a request to a REST endpoint of the server, which would respond to let the Pi know if the user was authenticated.
 

@@ -29,14 +29,14 @@ A buddy system is also supported in that a tool can require a room administrator
 | PCB board | |
 | 3D printer filament | |
 | Some sort of metal lock box? | |
-| | $75
+| | | $75
 
 ## Materials for One Connected Makerspace
-| Compponent      | Quantity | Total Cost -----
+| Compponent      | Quantity | Total Cost 
 | ----------- | ----------- | -----
 | Raspberry Pi 3      | 1       | $35
-| 2 A Wall Adapter Power Supply (USB Micro-B) |1 | $8
-| | $43
+| 2A Wall Adapter Power Supply (USB Micro-B) |1 | $8
+| | | $43
 
 ## State of the Repo
 All arduino code has been uploaded

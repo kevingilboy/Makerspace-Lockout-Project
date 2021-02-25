@@ -6,7 +6,7 @@ Our motivation was to non-obtrusively enforce the safe and sustainable use of ma
 
 [Poster](https://github.com/kevingilboy/Makerspace-Lockout-Project/blob/main/Design%20Expo%20Poster.pdf)
 
-<div style="text-align:center"><img src="./system_photo.png" alt="System Photo"></div>
+<p align="center"><img src="./system_photo.png" alt="System Photo"></p>
 
 ## System Usage Diagram
 The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and MQTT broker for Arduino microcontrollers in the Makerspace, and it communicates with the external database to authenticate users trying to enable tools. The complete workflow is as follows (please watch the [Video](https://www.youtube.com/watch?v=2HG-vyV4yoM) above for the simpler workflow. It is much easier to "show" this project than to "tell" about it).
@@ -19,7 +19,7 @@ The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and 
 7. If a user leaves their ID on a Card Reader but does not power on the machine for a certain time threshold, an email is sent to them stating that they either forgot their ID on the Card Reader or are being unsafe by leaving tools enabled and unused for long periods of time.
 8. When the user is finished, they take their ID off the Card Reader, which turns the status light to red and triggers a MQTT message from the Card Reader to the Pi, which then publishes a MQTT message to the relay-controlling Arduino to turn off the relay. If the user takes their ID off the reader without switching off the tool (as detected through current monitoring), a buzzer makes noise and power to the relay is cut.
 
-<div style="text-align:center"><img src="./system_diagram.png" alt="System Diagram"></div>
+<p align="center"><img src="./system_diagram.png" alt="System Diagram"></p>
 
 ## Materials for One Connected Tool
 | Component      | Quantity | Total Cost

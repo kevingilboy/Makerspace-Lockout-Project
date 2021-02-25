@@ -31,7 +31,7 @@ The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and 
 | Current Sensor (30A Split Core from Sparkfun)   | 1        | $10
 | Piezo Alarm (Optional)   | 1        | $3
 | Power supply for MCUs | 2 | $10
-| Assorted jumpers, | |
+| Assorted jumpers | |
 | PCB board | |
 | 3D printer filament | |
 | Some sort of metal lock box? | |

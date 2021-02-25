@@ -31,11 +31,11 @@ I provide the configuration file here.
 
 ## 4. Install the Mosquitto MQTT Broker ([link](https://www.instructables.com/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/))
 I followed [these](https://www.instructables.com/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/) steps which consist of:\
-`wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key`
-`sudo apt-key add mosquitto-repo.gpg.key`
-`cd /etc/apt/sources.list.d`
-`wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key`
-`sudo apt-get update`
+`wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key`\
+`sudo apt-key add mosquitto-repo.gpg.key`\
+`cd /etc/apt/sources.list.d`\
+`wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key`\
+`sudo apt-get update`\
 `sudo apt-get install mosquitto mosquitto-clients`
 
 ## 5. Ensure npm, nodejs, and nodemon are installed

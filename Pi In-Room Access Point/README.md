@@ -29,7 +29,7 @@ I provide the configuration file here.
 `sudo service hostapd start`\
 `sudo service dnsmasq start`
 
-## 4. Install the Mosquitto MQTT Broker ([link](https://www.instructables.com/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/))
+## 4. Install the Mosquitto MQTT Broker
 I followed [these](https://www.instructables.com/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/) steps which consist of:\
 `wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key`\
 `sudo apt-key add mosquitto-repo.gpg.key`\

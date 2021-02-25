@@ -3,6 +3,7 @@ Makerspace staff exert much of their time watching over students and verifying s
 Our motivation was to non-obtrusively enforce the safe and sustainable use of machinery in the Makerspaces across campus through RF student ID verification against a user database - if a student is not trained, power is cut to the tool and it will not turn on. If a student is trained, the tool is enabled.
 
 [Video](https://www.youtube.com/watch?v=2HG-vyV4yoM)
+
 [Poster](https://github.com/kevingilboy/Makerspace-Lockout-Project/blob/main/Design%20Expo%20Poster.pdf)
 
 ![System Photo](./system_photo.jpg)

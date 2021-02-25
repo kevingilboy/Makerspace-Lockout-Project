@@ -20,6 +20,7 @@ var transporter = nodemailer.createTransport({
 		user : 'OUR EMAIL ADDRESS', //TODO
 		pass : 'OUR EMAIL PASSWORD' //TODO
 	}
+});
 
 /// IP address of our user database
 var db_ip = 'OUR DATABASE IP'; //TODO

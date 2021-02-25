@@ -348,6 +348,7 @@ function AdminArrival(){
 		// Do nothing on response
 	});
 }
+
 /// Ends an admin session by disabling tools that are on and require admin presence (after a timeout) and posting to the DB to log the session
 function AdminDeparture() {
 	// POST the session to the DB for logging

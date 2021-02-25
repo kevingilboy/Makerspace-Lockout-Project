@@ -6,7 +6,7 @@ Our motivation was to non-obtrusively enforce the safe and sustainable use of ma
 
 [Poster](https://github.com/kevingilboy/Makerspace-Lockout-Project/blob/main/Design%20Expo%20Poster.pdf)
 
-![System Photo](./system_photo.jpg)
+![System Photo](./system_photo.png)
 
 ## System Usage Diagram
 The system is diagrammed below. A Raspberry Pi acts as a Wi-Fi access point and MQTT broker for Arduino microcontrollers in the Makerspace, and it communicates with the external database to authenticate users trying to enable tools. The complete workflow is as follows (please watch the [Video](https://www.youtube.com/watch?v=2HG-vyV4yoM) above for the simpler workflow. It is much easier to "show" this project than to "tell" about it).
